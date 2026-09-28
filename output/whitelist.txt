@@ -1,7 +1,7 @@
 ! Title: Whitelist for Merged Rules (V4)
 ! Description: Allow rules separated from main filter
-! Version: 202609280310
-! Total allow rules: 228
+! Version: 202609280450
+! Total allow rules: 229
 !
 @@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
 @@||5471782.fls.doubleclick.net^
@@ -98,6 +98,7 @@
 @@||email.awscloud.com^
 @@||email.elitedangerous.com^
 @@||email.procook.co.uk^
+@@||emails.educause.edu^
 @@||envato.market^
 @@||f-gear.ec-optimizer.com^
 @@||feed.adrelayer.com^

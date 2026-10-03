@@ -1,5 +1,5 @@
 ! Title: Merged phishing filter (V4)
 ! Category: phishing
-! Version: 202610031127
+! Version: 202610031603
 ! Rules: 0
 !

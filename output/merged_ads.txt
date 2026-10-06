@@ -1,5 +1,5 @@
 ! Title: Merged ads filter (V4)
 ! Category: ads
-! Version: 202610060555
+! Version: 202610061309
 ! Rules: 0
 !

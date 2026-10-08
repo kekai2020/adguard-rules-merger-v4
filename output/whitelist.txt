@@ -1,7 +1,7 @@
 ! Title: Whitelist for Merged Rules (V4)
 ! Description: Allow rules separated from main filter
-! Version: 202610081311
-! Total allow rules: 270
+! Version: 202610082310
+! Total allow rules: 271
 !
 @@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
 @@||3gppnetwork.org^
@@ -227,6 +227,7 @@
 @@||spameatingmonkey.net^
 @@||spamhaus.org^
 @@||spamrats.com^
+@@||spartaindependent.com^
 @@||speedport.ip^
 @@||sponsor.nitropay.com^
 @@||ssai.aniview.com^

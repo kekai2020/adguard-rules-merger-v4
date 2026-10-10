@@ -110,13 +110,13 @@
         <div class="header">
             <h1>🛡️ AdGuard Rules Merger V4</h1>
             <div class="subtitle">专业规则合并分析报告</div>
-            <div class="meta">生成时间：2026-10-10 05:21:13 | 源：18/18 | 版本：V4.0.0</div>
+            <div class="meta">生成时间：2026-10-10 12:15:51 | 源：18/18 | 版本：V4.0.0</div>
         </div>
 
         <!-- 核心指标 -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="value">2,906,834</div>
+                <div class="value">2,926,070</div>
                 <div class="label">Block 规则总数</div>
             </div>
             <div class="stat-card">
@@ -124,11 +124,11 @@
                 <div class="label">Allow 白名单</div>
             </div>
             <div class="stat-card">
-                <div class="value">17.9%</div>
+                <div class="value">17.7%</div>
                 <div class="label">综合去重率</div>
             </div>
             <div class="stat-card">
-                <div class="value">36,477</div>
+                <div class="value">36,533</div>
                 <div class="label">向上聚合</div>
             </div>
             <div class="stat-card">
@@ -136,7 +136,7 @@
                 <div class="label">冲突消解</div>
             </div>
             <div class="stat-card">
-                <div class="value">34.8s</div>
+                <div class="value">36.5s</div>
                 <div class="label">总耗时</div>
             </div>
         </div>
@@ -146,22 +146,22 @@
             <h2>📊 优化流水线漏斗</h2>
             <div class="funnel-step">
                 <div class="step-name">原始规则（Raw）</div>
-                <div class="step-count">3,540,884</div>
+                <div class="step-count">3,556,281</div>
                 <div class="step-diff">-</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">精确去重后</div>
-                <div class="step-count">2,943,777</div>
-                <div class="step-diff">-597,107</div>
+                <div class="step-count">2,963,069</div>
+                <div class="step-diff">-593,212</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">向上聚合后</div>
-                <div class="step-count">2,907,300</div>
-                <div class="step-diff">-36,477</div>
+                <div class="step-count">2,926,536</div>
+                <div class="step-diff">-36,533</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">冲突消解后</div>
-                <div class="step-count">2,907,105</div>
+                <div class="step-count">2,926,341</div>
                 <div class="step-diff">-33</div>
             </div>
         </div>
@@ -203,7 +203,7 @@
                         <td><code>||example.com^</code></td>
                         <td><span class="tag tag-green">✅ 支持</span></td>
                         <td>核心输出</td>
-                        <td>2,906,968</td>
+                        <td>2,926,204</td>
                     </tr>
                     <tr>
                         <td>通配符 Block</td>
@@ -270,10 +270,10 @@
             <div class="section">
                 <h2>⚡ 性能指标</h2>
                 <table>
-                    <tr><td>总耗时</td><td><strong>34.8s</strong></td></tr>
+                    <tr><td>总耗时</td><td><strong>36.5s</strong></td></tr>
                     <tr><td>源成功率</td><td>18/18 (100%)</td></tr>
-                    <tr><td>缓存命中</td><td>6/18</td></tr>
-                    <tr><td>精确去重</td><td>597,107</td></tr>
+                    <tr><td>缓存命中</td><td>11/18</td></tr>
+                    <tr><td>精确去重</td><td>593,212</td></tr>
                     <tr><td>模式规则丢弃</td><td>855</td></tr>
                 </table>
             </div>
@@ -295,7 +295,7 @@
         <div class="section">
             <h2>📏 域名长度统计</h2>
             <table>
-                <tr><td>平均域名长度</td><td>17.0 字符</td></tr>
+                <tr><td>平均域名长度</td><td>16.9 字符</td></tr>
                 <tr><td>最短域名</td><td>2 字符</td></tr>
                 <tr><td>最长域名</td><td>137 字符</td></tr>
             </table>
@@ -316,7 +316,7 @@
                 type: 'pie',
                 radius: ['40%', '70%'],
                 data: [
-                    { value: 2906968, name: '普通域名', itemStyle: { color: '#2a5298' } },
+                    { value: 2926204, name: '普通域名', itemStyle: { color: '#2a5298' } },
                     { value: 3, name: '通配符', itemStyle: { color: '#6ab04c' } },
                     { value: 62, name: '正则', itemStyle: { color: '#f0932b' } },
                     { value: 72, name: 'IP', itemStyle: { color: '#eb4d4b' } },
@@ -327,7 +327,7 @@
 
         // 类别柱状图
         const categoryChart = echarts.init(document.getElementById('categoryChart'));
-        const catData = {"other": 2906834};
+        const catData = {"other": 2926070};
         const catLabels = Object.keys(catData);
         const catValues = Object.values(catData);
         categoryChart.setOption({
@@ -355,11 +355,11 @@
             xAxis: { type: 'value' },
             yAxis: {
                 type: 'category',
-                data: ["co.com", "my.id", "aliyuncs.com", "za.com", "framer.app", "vercel.app", "run.app", "ru.com", "sa.com", "r2.dev", "amazonaws.com", "pages.dev", "wixstudio.com", "eu.cc", "firebaseapp.com", "web.app", "hl.cn", "cloudfront.net", "weebly.com", "fbcdn.net"],
+                data: ["my.id", "aliyuncs.com", "framer.app", "za.com", "dynu.org", "vercel.app", "run.app", "ru.com", "sa.com", "r2.dev", "amazonaws.com", "pages.dev", "wixstudio.com", "eu.cc", "firebaseapp.com", "web.app", "cloudfront.net", "weebly.com", "hl.cn", "fbcdn.net"],
             },
             series: [{
                 type: 'bar',
-                data: [473, 473, 651, 691, 728, 895, 924, 1023, 1153, 1664, 1690, 1701, 1752, 1927, 1967, 2033, 3177, 3415, 3710, 7024],
+                data: [489, 653, 728, 776, 850, 895, 928, 1421, 1470, 1663, 1693, 1701, 1752, 1933, 1968, 2034, 3414, 3710, 4936, 7024],
                 itemStyle: { color: '#2a5298' }
             }]
         });

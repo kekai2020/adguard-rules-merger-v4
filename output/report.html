@@ -110,13 +110,13 @@
         <div class="header">
             <h1>🛡️ AdGuard Rules Merger V4</h1>
             <div class="subtitle">专业规则合并分析报告</div>
-            <div class="meta">生成时间：2026-10-12 05:25:50 | 源：18/18 | 版本：V4.0.0</div>
+            <div class="meta">生成时间：2026-10-12 15:02:21 | 源：18/18 | 版本：V4.0.0</div>
         </div>
 
         <!-- 核心指标 -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="value">2,921,730</div>
+                <div class="value">2,835,406</div>
                 <div class="label">Block 规则总数</div>
             </div>
             <div class="stat-card">
@@ -124,11 +124,11 @@
                 <div class="label">Allow 白名单</div>
             </div>
             <div class="stat-card">
-                <div class="value">17.7%</div>
+                <div class="value">18.1%</div>
                 <div class="label">综合去重率</div>
             </div>
             <div class="stat-card">
-                <div class="value">36,332</div>
+                <div class="value">36,360</div>
                 <div class="label">向上聚合</div>
             </div>
             <div class="stat-card">
@@ -136,7 +136,7 @@
                 <div class="label">冲突消解</div>
             </div>
             <div class="stat-card">
-                <div class="value">24.5s</div>
+                <div class="value">30.1s</div>
                 <div class="label">总耗时</div>
             </div>
         </div>
@@ -146,22 +146,22 @@
             <h2>📊 优化流水线漏斗</h2>
             <div class="funnel-step">
                 <div class="step-name">原始规则（Raw）</div>
-                <div class="step-count">3,548,918</div>
+                <div class="step-count">3,461,591</div>
                 <div class="step-diff">-</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">精确去重后</div>
-                <div class="step-count">2,958,529</div>
-                <div class="step-diff">-590,389</div>
+                <div class="step-count">2,872,233</div>
+                <div class="step-diff">-589,358</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">向上聚合后</div>
-                <div class="step-count">2,922,197</div>
-                <div class="step-diff">-36,332</div>
+                <div class="step-count">2,835,873</div>
+                <div class="step-diff">-36,360</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">冲突消解后</div>
-                <div class="step-count">2,922,001</div>
+                <div class="step-count">2,835,677</div>
                 <div class="step-diff">-34</div>
             </div>
         </div>
@@ -203,7 +203,7 @@
                         <td><code>||example.com^</code></td>
                         <td><span class="tag tag-green">✅ 支持</span></td>
                         <td>核心输出</td>
-                        <td>2,921,864</td>
+                        <td>2,835,540</td>
                     </tr>
                     <tr>
                         <td>通配符 Block</td>
@@ -245,7 +245,7 @@
                         <td><code>||example.com^$third-party</code></td>
                         <td><span class="tag tag-yellow">⚠️ 截断</span></td>
                         <td>保留域名，丢弃修饰符</td>
-                        <td>855</td>
+                        <td>856</td>
                     </tr>
                     <tr>
                         <td>CSS 选择器</td>
@@ -270,11 +270,11 @@
             <div class="section">
                 <h2>⚡ 性能指标</h2>
                 <table>
-                    <tr><td>总耗时</td><td><strong>24.5s</strong></td></tr>
+                    <tr><td>总耗时</td><td><strong>30.1s</strong></td></tr>
                     <tr><td>源成功率</td><td>18/18 (100%)</td></tr>
-                    <tr><td>缓存命中</td><td>12/18</td></tr>
-                    <tr><td>精确去重</td><td>590,389</td></tr>
-                    <tr><td>模式规则丢弃</td><td>855</td></tr>
+                    <tr><td>缓存命中</td><td>7/18</td></tr>
+                    <tr><td>精确去重</td><td>589,358</td></tr>
+                    <tr><td>模式规则丢弃</td><td>856</td></tr>
                 </table>
             </div>
             <div class="section">
@@ -295,7 +295,7 @@
         <div class="section">
             <h2>📏 域名长度统计</h2>
             <table>
-                <tr><td>平均域名长度</td><td>16.8 字符</td></tr>
+                <tr><td>平均域名长度</td><td>16.9 字符</td></tr>
                 <tr><td>最短域名</td><td>2 字符</td></tr>
                 <tr><td>最长域名</td><td>137 字符</td></tr>
             </table>
@@ -316,7 +316,7 @@
                 type: 'pie',
                 radius: ['40%', '70%'],
                 data: [
-                    { value: 2921864, name: '普通域名', itemStyle: { color: '#2a5298' } },
+                    { value: 2835540, name: '普通域名', itemStyle: { color: '#2a5298' } },
                     { value: 3, name: '通配符', itemStyle: { color: '#6ab04c' } },
                     { value: 62, name: '正则', itemStyle: { color: '#f0932b' } },
                     { value: 72, name: 'IP', itemStyle: { color: '#eb4d4b' } },
@@ -327,7 +327,7 @@
 
         // 类别柱状图
         const categoryChart = echarts.init(document.getElementById('categoryChart'));
-        const catData = {"other": 2921730};
+        const catData = {"other": 2835406};
         const catLabels = Object.keys(catData);
         const catValues = Object.values(catData);
         categoryChart.setOption({
@@ -355,11 +355,11 @@
             xAxis: { type: 'value' },
             yAxis: {
                 type: 'category',
-                data: ["my.id", "aliyuncs.com", "framer.app", "za.com", "dynu.org", "vercel.app", "run.app", "sa.com", "ru.com", "r2.dev", "wixstudio.com", "pages.dev", "amazonaws.com", "eu.cc", "firebaseapp.com", "web.app", "cloudfront.net", "weebly.com", "hl.cn", "fbcdn.net"],
+                data: ["my.id", "aliyuncs.com", "framer.app", "za.com", "dynu.org", "vercel.app", "run.app", "sa.com", "ru.com", "r2.dev", "wixstudio.com", "amazonaws.com", "pages.dev", "eu.cc", "firebaseapp.com", "web.app", "cloudfront.net", "weebly.com", "hl.cn", "fbcdn.net"],
             },
             series: [{
                 type: 'bar',
-                data: [483, 645, 687, 727, 868, 896, 929, 1112, 1272, 1645, 1670, 1673, 1683, 1947, 1963, 2032, 3408, 3555, 4993, 7023],
+                data: [482, 648, 674, 729, 868, 893, 940, 1117, 1275, 1634, 1646, 1678, 1686, 1945, 1962, 2032, 3411, 3491, 5096, 7023],
                 itemStyle: { color: '#2a5298' }
             }]
         });

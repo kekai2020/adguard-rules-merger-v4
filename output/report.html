@@ -110,13 +110,13 @@
         <div class="header">
             <h1>🛡️ AdGuard Rules Merger V4</h1>
             <div class="subtitle">专业规则合并分析报告</div>
-            <div class="meta">生成时间：2026-10-19 04:10:20 | 源：18/18 | 版本：V4.0.0</div>
+            <div class="meta">生成时间：2026-10-19 12:46:01 | 源：18/18 | 版本：V4.0.0</div>
         </div>
 
         <!-- 核心指标 -->
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="value">2,905,651</div>
+                <div class="value">2,685,514</div>
                 <div class="label">Block 规则总数</div>
             </div>
             <div class="stat-card">
@@ -124,11 +124,11 @@
                 <div class="label">Allow 白名单</div>
             </div>
             <div class="stat-card">
-                <div class="value">23.7%</div>
+                <div class="value">20.9%</div>
                 <div class="label">综合去重率</div>
             </div>
             <div class="stat-card">
-                <div class="value">34,871</div>
+                <div class="value">34,865</div>
                 <div class="label">向上聚合</div>
             </div>
             <div class="stat-card">
@@ -136,7 +136,7 @@
                 <div class="label">冲突消解</div>
             </div>
             <div class="stat-card">
-                <div class="value">40.8s</div>
+                <div class="value">34.6s</div>
                 <div class="label">总耗时</div>
             </div>
         </div>
@@ -146,22 +146,22 @@
             <h2>📊 优化流水线漏斗</h2>
             <div class="funnel-step">
                 <div class="step-name">原始规则（Raw）</div>
-                <div class="step-count">3,808,782</div>
+                <div class="step-count">3,396,668</div>
                 <div class="step-diff">-</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">精确去重后</div>
-                <div class="step-count">2,940,989</div>
-                <div class="step-diff">-867,793</div>
+                <div class="step-count">2,720,846</div>
+                <div class="step-diff">-675,822</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">向上聚合后</div>
-                <div class="step-count">2,906,118</div>
-                <div class="step-diff">-34,871</div>
+                <div class="step-count">2,685,981</div>
+                <div class="step-diff">-34,865</div>
             </div>
             <div class="funnel-step">
                 <div class="step-name">冲突消解后</div>
-                <div class="step-count">2,905,922</div>
+                <div class="step-count">2,685,785</div>
                 <div class="step-diff">-34</div>
             </div>
         </div>
@@ -203,7 +203,7 @@
                         <td><code>||example.com^</code></td>
                         <td><span class="tag tag-green">✅ 支持</span></td>
                         <td>核心输出</td>
-                        <td>2,905,786</td>
+                        <td>2,685,649</td>
                     </tr>
                     <tr>
                         <td>通配符 Block</td>
@@ -270,10 +270,10 @@
             <div class="section">
                 <h2>⚡ 性能指标</h2>
                 <table>
-                    <tr><td>总耗时</td><td><strong>40.8s</strong></td></tr>
+                    <tr><td>总耗时</td><td><strong>34.6s</strong></td></tr>
                     <tr><td>源成功率</td><td>18/18 (100%)</td></tr>
-                    <tr><td>缓存命中</td><td>12/18</td></tr>
-                    <tr><td>精确去重</td><td>867,793</td></tr>
+                    <tr><td>缓存命中</td><td>9/18</td></tr>
+                    <tr><td>精确去重</td><td>675,822</td></tr>
                     <tr><td>模式规则丢弃</td><td>854</td></tr>
                 </table>
             </div>
@@ -295,7 +295,7 @@
         <div class="section">
             <h2>📏 域名长度统计</h2>
             <table>
-                <tr><td>平均域名长度</td><td>16.8 字符</td></tr>
+                <tr><td>平均域名长度</td><td>16.9 字符</td></tr>
                 <tr><td>最短域名</td><td>2 字符</td></tr>
                 <tr><td>最长域名</td><td>242 字符</td></tr>
             </table>
@@ -316,7 +316,7 @@
                 type: 'pie',
                 radius: ['40%', '70%'],
                 data: [
-                    { value: 2905786, name: '普通域名', itemStyle: { color: '#2a5298' } },
+                    { value: 2685649, name: '普通域名', itemStyle: { color: '#2a5298' } },
                     { value: 3, name: '通配符', itemStyle: { color: '#6ab04c' } },
                     { value: 61, name: '正则', itemStyle: { color: '#f0932b' } },
                     { value: 72, name: 'IP', itemStyle: { color: '#eb4d4b' } },
@@ -327,7 +327,7 @@
 
         // 类别柱状图
         const categoryChart = echarts.init(document.getElementById('categoryChart'));
-        const catData = {"other": 2905651};
+        const catData = {"other": 2685514};
         const catLabels = Object.keys(catData);
         const catValues = Object.values(catData);
         categoryChart.setOption({
@@ -355,11 +355,11 @@
             xAxis: { type: 'value' },
             yAxis: {
                 type: 'category',
-                data: ["workers.dev", "ru.com", "framer.app", "googleapis.com", "co.com", "allserial.icu", "blogspot.com", "run.app", "vercel.app", "r2.dev", "amazonaws.com", "eu.cc", "firebaseapp.com", "web.app", "wixstudio.com", "pages.dev", "cloudfront.net", "weebly.com", "hl.cn", "fbcdn.net"],
+                data: ["framer.app", "googleapis.com", "ru.com", "co.com", "allserial.icu", "edgeone.dev", "blogspot.com", "run.app", "vercel.app", "r2.dev", "amazonaws.com", "eu.cc", "firebaseapp.com", "web.app", "pages.dev", "wixstudio.com", "cloudfront.net", "weebly.com", "hl.cn", "fbcdn.net"],
             },
             series: [{
                 type: 'bar',
-                data: [499, 526, 545, 550, 604, 639, 710, 1008, 1214, 1550, 1573, 1824, 1940, 2032, 2529, 2624, 2930, 2949, 3864, 7023],
+                data: [545, 550, 551, 609, 639, 673, 706, 1009, 1213, 1550, 1556, 1847, 1940, 2033, 2481, 2528, 2930, 2950, 3572, 7023],
                 itemStyle: { color: '#2a5298' }
             }]
         });

@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-10-27T04:33:09.520472+00:00",
+  "generated_at": "2026-10-27T11:55:59.330772+00:00",
   "sources": {
     "total": 18,
     "ok": 18,
-    "cached": 13
+    "cached": 10
   },
   "rules": {
-    "before": 3719516,
-    "after": 2947424,
-    "block": 2947152,
+    "before": 3716528,
+    "after": 2947617,
+    "block": 2947345,
     "allow": 272,
-    "dedup_rate": 20.8
+    "dedup_rate": 20.7
   },
   "optimization": {
-    "exact_merged": 736314,
+    "exact_merged": 733362,
     "normalized_merged": 0,
     "wildcard_removed": 0,
     "conflict_resolved": 34,
-    "aggregated": 35582,
+    "aggregated": 35353,
     "whitelist_blocked": 34,
     "pattern_dropped": 854
   },
@@ -27,7 +27,7 @@
     "tracking": 0,
     "phishing": 0,
     "mining": 0,
-    "other": 2947152
+    "other": 2947345
   },
-  "elapsed_seconds": 36.365
+  "elapsed_seconds": 36.807
 }
